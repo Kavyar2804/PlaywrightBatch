@@ -1,0 +1,120 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "name": "Guerdy",
+      "age": 44,
+      "rollnumber": 1338,
+      "emails": [
+        "glamb80@gmail.com",
+        "guerdylambert9@gmail.com"
+      ],
+      "address": {
+        "city": "royal palm beach",
+        "zipcode": 33411,
+        "address2": [
+          {
+            "place": "my first place"
+          },
+          {
+            "place2": "my second place"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "name": "Lambert updated with PUT",
+      "age": 45,
+      "rollnumber": 8332,
+      "emails": [
+        "glamb80@gmail.com",
+        "guerdylambert9@gmail.com"
+      ],
+      "address": {
+        "city": "royal palm beach",
+        "zipcode": 33411,
+        "address2": [
+          {
+            "place": "Lambert's first place"
+          },
+          {
+            "place2": "Lambert's second place"
+          }
+        ]
+      }
+    }
+  ],
+  "blogposts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typecode"
+    },
+    {
+      "id": "2",
+      "title": "API Testing with Guerdy",
+      "author": "Guerdy"
+    },
+    {
+      "id": "3",
+      "title": "API Testing with Ethan",
+      "author": "Ethan"
+    },
+    {
+      "id": "4",
+      "title": "API Testing with Lambert",
+      "author": "Lambert"
+    },
+    {
+      "id": "5",
+      "title": "API Testing with pramod",
+      "author": "pramod"
+    },
+    {
+      "id": "6",
+      "title": "API Testing with ljlj",
+      "author": "ljlj"
+    },
+    {
+      "id": "7",
+      "title": "API Testing with sdfsfg",
+      "author": "sdfsfg"
+    },
+    {
+      "id": 9,
+      "title": "Nine",
+      "author": "NineAuthor"
+    }
+  ],
+  "ping": {
+    "result": "pong"
+  },
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

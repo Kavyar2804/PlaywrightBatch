@@ -1,0 +1,42 @@
+npm err code enoent npm err syscall lstat
+I had the same issue. Went into %appdata% folder and then created an empty npm folder.
+
+
+Review Points
+
+Previous company name & duration 
+Testyantra duration
+Project name & duration 
+Total years of experiance
+Roles & responsiblities
+Total years matching
+Education background
+Grammer mistakes
+
+credit card
+4748468805024005
+12/29
+319
+
+medi assist
+TYP2117@yantra
+Kavya@143
+
+
+
+
+Lusi Kumari Singh
+comm-average
+passout->2016
+relocation->yes
+selenui->
+Remarks->Not able to handle multiple windows, Pom, TestNG, oops concept implemnation, java program. Need to work on javs & selenuim concepts.
+
+Pankaj Kumar Number Busy
+Aman Trehan--> Candidate outside not able to take
+
+
+
+
+
+ahiahi3300@gmail.com

@@ -1,0 +1,38 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Ddemo%2Bqspider%26oq%3Ddemo%2Bqspider%26gs_lcrp%3DEgZjaHJvbWUyBggAEEUYOdIBCDYwOTNqMGoyqAIAsAIB%26sourceid%3Dchrome%26ie%3DUTF-8%26sei%3DledTaNSjIsShseMPk6TEgAI&q=EgQx-RzaGJXPz8IGIjDwqJFpQijZkc4cgXr-sbTXNmUfiV2PtWrK6PGIoddQrjzKzn8hNE_C8F3pKpCpo1EyAVJaAUM');
+  await page.locator('iframe[name="a-uggl6irx88o3"]').contentFrame().getByRole('checkbox', { name: 'I\'m not a robot' }).click();
+  await page.locator('iframe[name="c-uggl6irx88o3"]').contentFrame().locator('tr:nth-child(3) > td:nth-child(2)').click();
+  await page.locator('iframe[name="c-uggl6irx88o3"]').contentFrame().locator('td:nth-child(2)').first().click();
+  await page.locator('iframe[name="c-uggl6irx88o3"]').contentFrame().locator('td:nth-child(2)').first().click();
+  await page.locator('iframe[name="c-uggl6irx88o3"]').contentFrame().locator('.rc-imageselect-tile').first().click();
+  await page.locator('iframe[name="c-uggl6irx88o3"]').contentFrame().getByRole('button', { name: 'Verify' }).click();
+  await page.getByRole('link', { name: 'DemoApps | Qspiders QSpiders' }).click();
+  await page.locator('html').click();
+  await page.goto('https://demoapps.qspiders.com/');
+  await page.getByRole('link').filter({ hasText: 'UI Testing ConceptsExperience' }).click();
+  await page.getByRole('listitem').filter({ hasText: 'Popups' }).click();
+  await page.getByRole('link', { name: 'Hidden division' }).click();
+  await page.getByRole('button', { name: 'Add Customer' }).click();
+  await page.getByRole('textbox', { name: 'Name' }).click();
+  await page.getByRole('textbox', { name: 'Name' }).fill('gghg');
+  await page.getByRole('textbox', { name: 'Email' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).fill('hjhj');
+  await page.getByLabel('Product').selectOption('Mobile');
+  await page.getByRole('textbox', { name: 'Message' }).click();
+  await page.getByRole('textbox', { name: 'Message' }).fill('hgbjkkj');
+  await page.getByRole('button', { name: 'Submit' }).click();
+  await page.locator('div').filter({ hasText: /^MobileLaptop$/ }).click();
+  await page.getByRole('button', { name: 'Cancel' }).click();
+  await page.getByRole('cell', { name: 'Jack Blake' }).click();
+  await page.getByRole('cell', { name: 'John Doe' }).click();
+  await page.getByRole('link', { name: 'Authentication' }).click();
+  const page1Promise = page.waitForEvent('popup');
+  await page.getByRole('link', { name: 'Login' }).click();
+  const page1 = await page1Promise;
+  await page1.goto('chrome-error://chromewebdata/');
+  await page.getByRole('link', { name: 'Notifications' }).click();
+  await page.getByRole('button', { name: 'Notification' }).click();
+  await page.getByRole('button', { name: 'Notification' }).click();
+});

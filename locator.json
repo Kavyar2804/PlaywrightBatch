@@ -1,0 +1,4 @@
+{ "usernameInput": "#username", 
+"passwordInput": "#password", 
+"loginButton": "button[type='submit']"
+}
